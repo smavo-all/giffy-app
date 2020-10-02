@@ -2,16 +2,18 @@ import React, { useEffect, useState } from 'react';
 import Gif from './Gif';
 import getGifs from '../services/getGifs';
 
-function ListGifs({ search }) {
+function ListGifs({ params }) {
 
+    const { search } = params
+    //console.log(search)
     const [gifs, setGifs] = useState([]);
 
     useEffect(function () {
-        getGifs({ search}).then(gifs => setGifs(gifs))
+        getGifs({ search }).then(gifs => setGifs(gifs))
     }, [search])
 
     return (
-        <div>
+        <>
             {
                 gifs.map(simplegifs =>
                     <Gif
@@ -21,7 +23,7 @@ function ListGifs({ search }) {
                         id={simplegifs.id} />
                 )
             }
-        </div>
+        </>
     )
 }
 
