@@ -13,6 +13,11 @@
   color: white;
 }
 
+
+.App-content img {
+  width: 300px;
+}
+
 a {
   color: white;
   text-decoration: none;
