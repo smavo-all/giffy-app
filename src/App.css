@@ -16,6 +16,7 @@
 
 .App-content img {
   width: 300px;
+  cursor: pointer;
 }
 
 a {
@@ -24,3 +25,4 @@ a {
   font-size: 25px;
   font-weight: 500;
 }
+

@@ -1,41 +1,32 @@
 import React, { useEffect, useState } from 'react';
-import Gif from '../../Components/Gif';
 import getGifs from '../../services/getGifs';
+import ListGifs from '../../Components/ListGifs';
+import Spinner from '../../Components/Spinner';
 
 function SearchResults({ params }) {
 
     const { search } = params
-    //console.log(search)
+    const [loading, setLoading] = useState(false)
+    const [gifs, setGifs] = useState([])
 
-    const [gifs, setGifs] = useState(
-        { loading: false, results: [] }
-    );
 
     useEffect(function () {
-        setGifs(
-            actualGifs => ({ loading: true, results: actualGifs.results })
-        )
+        setLoading(true)
 
         getGifs({ search })
             .then(gifs => {
-                setGifs({ loading: false, results: gifs })
+                setGifs(gifs)
+                setLoading(false)
             })
     }, [search])
 
-    if (gifs.loading) return <p>Cargando Gifs</p>
-
     return <>
         {
-            gifs.results.map(simplegifs =>
-                <Gif
-                    key={simplegifs.id}
-                    title={simplegifs.title}
-                    url={simplegifs.url}
-                    id={simplegifs.id} />
-            )
+            loading
+                ? <Spinner />
+                : <ListGifs gifs={gifs} />
         }
     </>
-
 }
 
 export default SearchResults;
