@@ -22,5 +22,33 @@
   text-align: left;
 }
 
+/*----------*/
 
+.App-main {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+}
+
+.App-results {
+  flex-shrink: 2;
+}
+
+.App-categoria {
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+@media screen and (min-width: 640px){
+  .App-main{
+    flex-direction: initial;
+  }
+
+  .App-categoria {
+    padding: 0 2em;
+    position: sticky;
+    top: 0;
+    width: 40%;
+  }
+}
 

@@ -10,7 +10,10 @@ export default function SearchResults ({ params }) {
   return <>
     {loading
       ? <Spinner />
-      : <ListGifs gifs={gifs} />
+      : <>
+        <h3 className="App-title">Busqueda: {search}</h3>
+        <ListGifs gifs={gifs} />
+      </>
     }
   </>
 }
