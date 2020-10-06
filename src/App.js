@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
 import { Link, Route } from "wouter";
-import Home from './pages/Home/Index';
-import Detail from './pages/Detail/Index';
-import SearchResult from './pages/SearchResult/Index';
-import logo from './logo.svg';
+import Home from './pages/Home/index';
+import Detail from './pages/Detail/index';
+import SearchResult from './pages/SearchResult/index';
 import StaticContext from './context/StaticContex';
+import { GifsContextProvider } from './context/GifsContext';
 
 
 function App() {
@@ -15,9 +15,9 @@ function App() {
       <div className="App">
         <section className="App-content">
           <Link to='/' >
-            <img className='App-logo' alt='Giphy Logo' src={logo} />
+            <img className='App-logo' alt='Giphy Logo' src='../logo.svg' />
           </Link>
-
+          <GifsContextProvider>
           <Route
             component={Home}
             path='/'
@@ -31,6 +31,7 @@ function App() {
             component={Detail}
             path='/gif/:id'
           />
+          </GifsContextProvider>
         </section>
       </div>
     </StaticContext.Provider>

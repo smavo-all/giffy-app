@@ -1,4 +1,4 @@
-const api_key = 'FdbJxKPfIe8M0TjVcM8c6iMK0HN2NZeP';
+const api_Key = 'FdbJxKPfIe8M0TjVcM8c6iMK0HN2NZeP';
 
 const fromApiResponseToGifs = apiResponse => {
     const { data = [] } = apiResponse
@@ -13,11 +13,10 @@ const fromApiResponseToGifs = apiResponse => {
     return []
 }
 
+export default function getGifs({ limit = 30, search = 'Luna' } = {}) {
+    const apiURL = `https://api.giphy.com/v1/gifs/search?api_key=${api_Key}&q=${search}&limit=${limit}&offset=0&rating=G&lang=en`
 
-export default function getGifs({limit = 25, search = 'morty'} = {}) {
-    const apiUrl = `https://api.giphy.com/v1/gifs/search?api_key=${api_key}&q=${search}&limit=${limit}&offset=0&rating=G&lang=en`
-
-    return fetch(apiUrl)
+    return fetch(apiURL)
         .then(res => res.json())
         .then(fromApiResponseToGifs)
 }
