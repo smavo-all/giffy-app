@@ -11,7 +11,7 @@ import StaticContext from './context/StaticContex';
 function App() {
 
   return (
-    <StaticContext.Provider value={{ name: 'Sergio', demo: true }}>
+    <StaticContext.Provider>
       <div className="App">
         <section className="App-content">
           <Link to='/' >
