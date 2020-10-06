@@ -1,22 +1,23 @@
 {
   "files": {
     "main.css": "/giffy-app/static/css/main.1c7a7827.chunk.css",
-    "main.js": "/giffy-app/static/js/main.20df21db.chunk.js",
-    "main.js.map": "/giffy-app/static/js/main.20df21db.chunk.js.map",
+    "main.js": "/giffy-app/static/js/main.78fa156c.chunk.js",
+    "main.js.map": "/giffy-app/static/js/main.78fa156c.chunk.js.map",
     "runtime-main.js": "/giffy-app/static/js/runtime-main.938a1381.js",
     "runtime-main.js.map": "/giffy-app/static/js/runtime-main.938a1381.js.map",
-    "static/js/2.57ebdc1a.chunk.js": "/giffy-app/static/js/2.57ebdc1a.chunk.js",
-    "static/js/2.57ebdc1a.chunk.js.map": "/giffy-app/static/js/2.57ebdc1a.chunk.js.map",
+    "static/js/2.19b8c663.chunk.js": "/giffy-app/static/js/2.19b8c663.chunk.js",
+    "static/js/2.19b8c663.chunk.js.map": "/giffy-app/static/js/2.19b8c663.chunk.js.map",
     "index.html": "/giffy-app/index.html",
-    "precache-manifest.83c6ed87f45df5f70e9309cd1b22d5e0.js": "/giffy-app/precache-manifest.83c6ed87f45df5f70e9309cd1b22d5e0.js",
+    "precache-manifest.74aec5a3950f8e3d0ee01fd78340e6ea.js": "/giffy-app/precache-manifest.74aec5a3950f8e3d0ee01fd78340e6ea.js",
     "service-worker.js": "/giffy-app/service-worker.js",
     "static/css/main.1c7a7827.chunk.css.map": "/giffy-app/static/css/main.1c7a7827.chunk.css.map",
-    "static/js/2.57ebdc1a.chunk.js.LICENSE.txt": "/giffy-app/static/js/2.57ebdc1a.chunk.js.LICENSE.txt"
+    "static/js/2.19b8c663.chunk.js.LICENSE.txt": "/giffy-app/static/js/2.19b8c663.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/giffy-app/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.938a1381.js",
-    "static/js/2.57ebdc1a.chunk.js",
+    "static/js/2.19b8c663.chunk.js",
     "static/css/main.1c7a7827.chunk.css",
-    "static/js/main.20df21db.chunk.js"
+    "static/js/main.78fa156c.chunk.js"
   ]
 }
