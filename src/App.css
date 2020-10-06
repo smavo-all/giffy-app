@@ -2,27 +2,25 @@
   text-align: center;
 }
 
+.App-logo {
+  object-fit: contain;
+  height: 250px;
+}
+
+.App-title {
+  color: #1c9df3;
+}
+
 .App-content {
   background-color: #282c34;
-  min-height: 100vh;
+  color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  padding: 16px;
+  text-align: left;
 }
 
 
-.App-content img {
-  width: 300px;
-  cursor: pointer;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-  font-size: 25px;
-  font-weight: 500;
-}
 
