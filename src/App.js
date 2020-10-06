@@ -6,7 +6,7 @@ import Detail from './pages/Detail/index';
 import SearchResult from './pages/SearchResult/index';
 import StaticContext from './context/StaticContex';
 import { GifsContextProvider } from './context/GifsContext';
-
+import logo from './logo.svg'
 
 function App() {
 
@@ -15,7 +15,7 @@ function App() {
       <div className="App">
         <section className="App-content">
           <Link to='/' >
-            <img className='App-logo' alt='Giphy Logo' src='../logo.svg' />
+            <img className='App-logo' alt='Giphy Logo' src={logo} />
           </Link>
           <GifsContextProvider>
           <Route
